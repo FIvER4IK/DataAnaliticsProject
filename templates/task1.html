@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Task1</title>
+  <style>
+   h1 {
+    color: green;
+    font-family: Arial;
+   }
+   p {
+    color: blue;
+    font-size: 19px;
+    width: 60%;
+   }
+  </style>
+ </head>
+ <body>
+  <h1>Menu</h1>
+    {% for table in tables %}
+                    {{titles[loop.index][8:]}}
+                    {{ table|safe }}
+    {% endfor %}
+    <p>
+        Oil Values:
+        {{oil_stat}}
+    </p>
+    <p>
+        Gold Values:
+        {{gold_stat}}
+    </p>
+    <p>
+        SnP Values:
+        {{snp_stat}}
+    </p>
+  <a href="task2.html">task2</a>
+  <a href="task2.5.html">task2.5</a>
+  <a href="task3.html">task3</a>
+
+ </body>
+</html>
