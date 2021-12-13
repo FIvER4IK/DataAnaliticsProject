@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Task1</title>
-  <style>
-   h1 {
-    color: green;
-    font-family: Arial;
-   }
-   p {
-    color: blue;
-    font-size: 19px;
-    width: 60%;
-   }
-  </style>
- </head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href='/static/css/main.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+        <title>menu</title>
+    </head>
  <body>
-  <h1>Menu</h1>
-    {% for table in tables %}
-                    {{titles[loop.index][8:]}}
-                    {{ table|safe }}
-    {% endfor %}
+    <div class ='intro_tsk'>
+        <div class='container_intro'>
+            
+        </div>
+    </div>
+    <header class="header">
+        <div class ='container'>
+            <div class ='header_inner'>
+                <div class="logo">Menu</div>
+                <nav class='nav'>
+                    <a class="nav_link" href="task1.html">TASK 1</a>
+                    <a class="nav_link" href="task2.html">TASK 2</a>
+                    <a class="nav_link" href="task2.5.html">TASK 2.5</a>
+                    <a class="nav_link" href="task3.html">TASK 3</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class ='table'>
+        {% for table in tables %}
+                        {{titles[loop.index][8:]}}
+                        {{ table|safe }}
+        {% endfor %}
+    </div>
+    <div class="container_values">
     <p>
         Oil Values:
         {{oil_stat}}
@@ -32,9 +44,6 @@
         SnP Values:
         {{snp_stat}}
     </p>
-  <a href="task2.html">task2</a>
-  <a href="task2.5.html">task2.5</a>
-  <a href="task3.html">task3</a>
-
+    </div>
  </body>
 </html>

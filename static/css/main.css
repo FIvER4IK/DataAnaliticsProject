@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(63, 59, 59)
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+.intro{
+    width: 100%;
+    height: 100vh;
+    background: url("/static/img/david-van-dijk-3LTht2nxd34-unsplash.jpg") center
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+}
+
+.intro_tsk{
+    width: 100%;
+    height: 1080px;
+    background: rgb(182, 214, 208);
+    
+}
+
+.intro_tsk2{
+    width: 100%;
+    height: 1230px;
+    background: rgb(182, 214, 208);
+    
+}
+
+.intro_tsk2andhlf{
+    width: 100%;
+    height: 1670px;
+    background: rgb(182, 214, 208);
+    
+}
+
+.intro_tsk3{
+    width: 100%;
+    height: 5000px;
+    background: rgb(182, 214, 208);
+    
+}
+
+.intro_tittle {
+    color: black;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+
+}
+
+.header_inner {
+    width: 100%;
+    max-width: 900;
+    margin: 0 auto;
+
+}
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.nav {
+    font-size: 25;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    right: 600px;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    transition: color .1s linear ;
+}
+.nav_link:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 171, 102);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s;
+}
+
+.nav_link:hover {
+    color: rgb(255, 171, 102);
+}
+
+.nav_link:hover:after{
+    opacity: 1;
+}
+
+.table{
+	border: 1px solid #eee;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 20px;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-spacing: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border: none;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+    margin: 0;
+	background: #efefef;
+	border: 1px solid #dddddd;
+    
+}
+
+.table td{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	text-align: left;
+}
+
+.table tbody tr:nth-child(odd){
+	background: #fff;
+}
+
+.table tbody tr:nth-child(even){
+	background: #F7F7F7;
+}
+
+.container_values{
+    position: absolute;
+    top: 570px;
+    left: 20px;
+}
+
+.container_tsk2{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+.container_tsk3{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+.container_tsk2andhlf{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
